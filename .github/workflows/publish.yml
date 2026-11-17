@@ -35,6 +35,16 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify the run targets the latest main
+        run: |
+          git fetch --quiet origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo "::error::This run is building $(git rev-parse --short HEAD), but the latest main is $(git rev-parse --short FETCH_HEAD). Start a new run from the latest main; do not re-run an old workflow run."
+            exit 1
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

@@ -19,3 +19,11 @@ Added vscode-styled-components extension
 ## [2.6.0]
 
 Added my newly developed extension for removing console logs from a file 😊
+
+## [2.6.1]
+
+Documentation and metadata refresh — no extension changes.
+
+- Rewrote the README with an overview, feature highlights, the full extension list, dependencies, local setup, technology rationale, and links.
+- Added a polished VS Code screenshot.
+- Updated the repository URL to the canonical GitHub location.

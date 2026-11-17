@@ -1,0 +1,230 @@
+<!--
+  Source artwork for the README hero.
+  The README references the rendered assets/hero.png, because the VS Code
+  Marketplace rejects SVG images in READMEs at publish time.
+  Export the PNG at 1600x760 with resvg (or any SVG renderer) after editing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Web Dev — a curated VS Code extension pack</title>
+  <desc id="desc">Light hero artwork with the Web Dev title, 23 extensions, and a preview of the pack installed in a code editor.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbfdff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+
+    <radialGradient id="blobIndigo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobRose" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="brand" x1="300" y1="0" x2="470" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="panelTint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="55%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#cffafe"/>
+    </linearGradient>
+
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.3" fill="#b9c8de"/>
+    </pattern>
+    <radialGradient id="dotFade" cx="50%" cy="42%" r="66%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="62%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotMask">
+      <rect width="1600" height="760" fill="url(#dotFade)"/>
+    </mask>
+
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#1e3a8a" flood-opacity="0.14"/>
+    </filter>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#1e3a8a" flood-opacity="0.10"/>
+    </filter>
+
+    <path id="star" d="M10 0l2.95 6.2 6.75.9-4.95 4.7 1.25 6.7L10 15.35 4 18.5l1.25-6.7L.3 7.1l6.75-.9z"/>
+  </defs>
+
+  <!-- background -->
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <circle cx="1390" cy="40" r="430" fill="url(#blobIndigo)"/>
+  <circle cx="120" cy="730" r="380" fill="url(#blobCyan)"/>
+  <circle cx="820" cy="400" r="300" fill="url(#blobRose)"/>
+  <rect width="1600" height="760" fill="url(#dots)" mask="url(#dotMask)" opacity="0.6"/>
+
+  <!-- left: identity -->
+  <g filter="url(#softShadow)">
+    <rect x="96" y="92" width="290" height="38" rx="19" fill="#ffffff" stroke="#e2e8f0"/>
+  </g>
+  <circle cx="118" cy="111" r="4.5" fill="url(#brand)"/>
+  <text x="134" y="116" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12.5" font-weight="700" letter-spacing="2.1" fill="#4f46e5">VS CODE EXTENSION PACK</text>
+
+  <text x="94" y="238" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="96" font-weight="700" letter-spacing="-2.6" fill="#0f172a">Web <tspan fill="url(#brand)">Dev</tspan></text>
+
+  <text x="96" y="294" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" fill="#475569">One install. 23 extensions. Everything you need</text>
+  <text x="96" y="327" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" fill="#475569">for HTML, CSS, JavaScript, React, Tailwind, and Git.</text>
+
+  <!-- stats -->
+  <g font-family="Noto Sans, DejaVu Sans, sans-serif">
+    <text x="96" y="418" font-size="36" font-weight="700" fill="#0f172a">23</text>
+    <text x="96" y="442" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748b">EXTENSIONS</text>
+
+    <text x="260" y="418" font-size="36" font-weight="700" fill="#0f172a">6</text>
+    <text x="260" y="442" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748b">CATEGORIES</text>
+
+    <text x="424" y="418" font-size="36" font-weight="700" fill="#0f172a">1</text>
+    <text x="424" y="442" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748b">INSTALL</text>
+
+    <text x="588" y="418" font-size="36" font-weight="700" fill="#0f172a">MIT</text>
+    <text x="588" y="442" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748b">LICENSE</text>
+  </g>
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="228" y1="384" x2="228" y2="444"/>
+    <line x1="392" y1="384" x2="392" y2="444"/>
+    <line x1="556" y1="384" x2="556" y2="444"/>
+  </g>
+
+  <!-- tech chips -->
+  <g font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" fill="#334155">
+    <rect x="96" y="492" width="98" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="116" cy="510" r="4" fill="#e34f26"/>
+    <text x="128" y="515">HTML</text>
+
+    <rect x="204" y="492" width="90" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="224" cy="510" r="4" fill="#2563eb"/>
+    <text x="236" y="515">CSS</text>
+
+    <rect x="304" y="492" width="126" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="324" cy="510" r="4" fill="#eab308"/>
+    <text x="336" y="515">JavaScript</text>
+
+    <rect x="440" y="492" width="96" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="460" cy="510" r="4" fill="#06b6d4"/>
+    <text x="472" y="515">React</text>
+
+    <rect x="546" y="492" width="114" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="566" cy="510" r="4" fill="#38bdf8"/>
+    <text x="578" y="515">Tailwind</text>
+
+    <rect x="670" y="492" width="78" height="36" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="690" cy="510" r="4" fill="#f97316"/>
+    <text x="702" y="515">Git</text>
+  </g>
+
+  <!-- social proof -->
+  <g fill="#f59e0b">
+    <use href="#star" x="96" y="572"/>
+    <use href="#star" x="118" y="572"/>
+    <use href="#star" x="140" y="572"/>
+    <use href="#star" x="162" y="572"/>
+    <use href="#star" x="184" y="572"/>
+  </g>
+  <text x="212" y="589" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" fill="#475569"><tspan font-weight="700" fill="#0f172a">5.0</tspan> rating · <tspan font-weight="700" fill="#0f172a">89k+</tspan> installs</text>
+
+  <!-- editor preview -->
+  <rect x="852" y="112" width="664" height="520" rx="30" fill="url(#panelTint)" transform="rotate(2.2 1184 372)" opacity="0.85"/>
+  <rect x="824" y="96" width="680" height="548" rx="22" fill="#ffffff" stroke="#e3eaf5" filter="url(#cardShadow)"/>
+
+  <path d="M846 96 H1482 A22 22 0 0 1 1504 118 V148 H824 V118 A22 22 0 0 1 846 96 Z" fill="#f8fafc"/>
+  <line x1="824" y1="148" x2="1504" y2="148" stroke="#edf2f9" stroke-width="1"/>
+
+  <circle cx="852" cy="122" r="5.5" fill="#ff5f57"/>
+  <circle cx="872" cy="122" r="5.5" fill="#febc2e"/>
+  <circle cx="892" cy="122" r="5.5" fill="#28c840"/>
+
+  <rect x="920" y="107" width="140" height="30" rx="9" fill="#ffffff" stroke="#e4eaf3"/>
+  <path d="M936 116l-4 5 4 5 M946 116l4 5-4 5" fill="none" stroke="#e34f26" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="958" y="127" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#475569">index.html</text>
+  <circle cx="1462" cy="122" r="2.2" fill="#cbd5e1"/>
+  <circle cx="1476" cy="122" r="2.2" fill="#cbd5e1"/>
+  <circle cx="1490" cy="122" r="2.2" fill="#cbd5e1"/>
+
+  <!-- code -->
+  <g font-family="DejaVu Sans Mono, Noto Sans Mono, monospace" font-size="15.5">
+    <!-- highlight for the edited line -->
+    <rect x="872" y="271" width="352" height="28" rx="7" fill="#f3f7ff"/>
+    <rect x="872" y="271" width="3" height="28" rx="1.5" fill="#6366f1"/>
+
+    <g font-size="12.5" fill="#cbd5e1" text-anchor="end" font-family="Noto Sans, DejaVu Sans, sans-serif">
+      <text x="862" y="192">1</text>
+      <text x="862" y="225">2</text>
+      <text x="862" y="258">3</text>
+      <text x="862" y="291" fill="#6366f1" font-weight="700">4</text>
+      <text x="862" y="324">5</text>
+      <text x="862" y="357">6</text>
+      <text x="862" y="390">7</text>
+    </g>
+
+    <!-- 1 -->
+    <text x="884" y="192" fill="#94a3b8">&lt;<tspan fill="#e11d48">section</tspan><tspan fill="#7c3aed">&#160;class</tspan>=<tspan fill="#0e7490">"hero"</tspan>&gt;</text>
+    <!-- 2 -->
+    <text x="902" y="225" fill="#94a3b8">&lt;<tspan fill="#e11d48">h1</tspan><tspan fill="#7c3aed">&#160;class</tspan>=<tspan fill="#0e7490">"title"</tspan>&gt;<tspan fill="#334155">Build faster.</tspan>&lt;/<tspan fill="#e11d48">h1</tspan>&gt;</text>
+    <!-- 3 -->
+    <text x="902" y="258" fill="#94a3b8">&lt;<tspan fill="#e11d48">p</tspan><tspan fill="#7c3aed">&#160;class</tspan>=<tspan fill="#0e7490">"subtitle"</tspan>&gt;</text>
+    <!-- 4 -->
+    <text x="920" y="291" fill="#334155">One install. 23 extensions.</text>
+    <!-- 5 -->
+    <text x="902" y="324" fill="#94a3b8">&lt;/<tspan fill="#e11d48">p</tspan>&gt;</text>
+    <!-- 6 -->
+    <text x="902" y="357" fill="#94a3b8">&lt;<tspan fill="#e11d48">a</tspan><tspan fill="#7c3aed">&#160;class</tspan>=<tspan fill="#0e7490">"btn"</tspan>&gt;<tspan fill="#334155">Get the pack</tspan>&lt;/<tspan fill="#e11d48">a</tspan>&gt;</text>
+    <!-- 7 -->
+    <text x="884" y="390" fill="#94a3b8">&lt;/<tspan fill="#e11d48">section</tspan>&gt;</text>
+  </g>
+
+  <line x1="848" y1="410" x2="1480" y2="410" stroke="#eef3fa" stroke-width="1"/>
+
+  <!-- installed extensions -->
+  <text x="848" y="438" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.9" fill="#94a3b8">INSTALLED EXTENSIONS</text>
+  <circle cx="1424" cy="434" r="3.5" fill="#10b981"/>
+  <text x="1434" y="438" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" fill="#059669">23 active</text>
+
+  <!-- row 1 -->
+  <rect x="848" y="458" width="30" height="30" rx="8" fill="#f59e0b"/>
+  <text x="863" y="479" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">P</text>
+  <text x="888" y="471" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#1e293b">Prettier</text>
+  <text x="888" y="488" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" fill="#94a3b8">Code formatter</text>
+  <circle cx="1466" cy="473" r="9" fill="#ecfdf5"/>
+  <path d="M1462 473l3 3 5-6" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- row 2 -->
+  <rect x="848" y="504" width="30" height="30" rx="8" fill="#6366f1"/>
+  <text x="863" y="525" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">ES</text>
+  <text x="888" y="517" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#1e293b">ESLint</text>
+  <text x="888" y="534" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" fill="#94a3b8">JavaScript linting</text>
+  <circle cx="1466" cy="519" r="9" fill="#ecfdf5"/>
+  <path d="M1462 519l3 3 5-6" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- row 3 -->
+  <rect x="848" y="550" width="30" height="30" rx="8" fill="#0ea5e9"/>
+  <text x="863" y="571" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">TW</text>
+  <text x="888" y="563" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#1e293b">Tailwind CSS IntelliSense</text>
+  <text x="888" y="580" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="11" fill="#94a3b8">Class autocomplete</text>
+  <circle cx="1466" cy="565" r="9" fill="#ecfdf5"/>
+  <path d="M1462 565l3 3 5-6" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="848" y="616" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12" fill="#64748b">+ 20 more extensions install automatically</text>
+
+  <!-- footer -->
+  <line x1="96" y1="676" x2="1504" y2="676" stroke="#e6edf7" stroke-width="1"/>
+  <text x="96" y="704" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#94a3b8">c0der-himel.vscode-wev-dev-extension-pack</text>
+  <text x="1504" y="704" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#64748b" text-anchor="end">VS Code Marketplace</text>
+</svg>

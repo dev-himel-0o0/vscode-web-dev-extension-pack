@@ -21,6 +21,8 @@ Removed:
 - TODO Highlight
 - vscode-styled-components
 
+- Replaced the README screenshot with a light SVG hero illustration, exported to PNG for Marketplace compatibility.
+
 The README was updated to match, and releases now publish from GitHub Actions using Trusted Publishing (OIDC) instead of a personal access token.
 
 ## [2.2.0]

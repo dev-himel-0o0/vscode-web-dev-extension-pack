@@ -18,9 +18,9 @@ One install. 23 extensions. Everything you need for HTML, CSS, JavaScript, React
 
 </div>
 
-![Web Dev extension page in VS Code](assets/screenshot.png)
+![Web Dev — a curated VS Code extension pack](assets/hero.png)
 
-<p align="center"><sub>The Web Dev extension page in VS Code — 23 curated extensions in one install.</sub></p>
+<p align="center"><sub>One install. 23 extensions. A complete front-end toolkit for VS Code.</sub></p>
 
 ## Overview
 
@@ -68,6 +68,7 @@ The pack currently ships **23 extensions** across six areas. Every extension bel
 | **VS Code Marketplace** | Distribution, discovery, installs, reviews, and update delivery. |
 | **Git & GitHub** | Source control, issue tracking, and public collaboration. |
 | **Markdown & badges** | A single README powers both the GitHub landing page and the Marketplace listing. |
+| **SVG + PNG artwork** | The README hero is authored as SVG and exported to PNG, because the Marketplace rejects SVG images in READMEs. |
 
 **Not used:** there is no application runtime, no bundler, no TypeScript build, and no custom UI. That is deliberate — an extension pack should stay declarative and let VS Code do the installation work.
 
@@ -193,7 +194,8 @@ The project does not ship settings or keybindings, so it stays unopinionated abo
 - **Upstream churn.** The pack does not pin extension versions, so users receive the latest releases. An upstream deprecation, regression, or a raised minimum VS Code version can change the experience without any code change in this repository, so the list needs periodic audits.
 - **Compatibility across editor versions.** The manifest targets VS Code `^1.76.2` to stay available to older installs, but individual extensions set their own engine requirements. Testing the current VS Code release alongside the minimum supported version is part of a responsible release.
 - **A permanent Marketplace identity.** The published ID contains `wev` instead of `web`. Renaming it would break existing installs, bookmarks, and review links, so the original ID is kept for backward compatibility. The lesson: choose a Marketplace ID carefully, because it is effectively permanent.
-- **Documentation and manifest drift.** The README is both the GitHub landing page and the Marketplace listing, and images must be included in the VSIX package. Keeping the extension table, version numbers, screenshot, and changelog in sync takes deliberate effort.
+- **Documentation and manifest drift.** The README is both the GitHub landing page and the Marketplace listing, and images must be included in the VSIX package. Keeping the extension table, version numbers, hero artwork, and changelog in sync takes deliberate effort.
+- **Marketplace image rules.** README images must be PNG, JPEG, or GIF — SVG is rejected at publish time. The hero is therefore kept as an editable SVG source and exported to PNG for the listing.
 - **Keeping defaults out of the way.** Several extensions touch formatting, comments, diagnostics, and completion. The goal is a set that coexists cleanly and lets users turn off anything they do not need, rather than a pile of maximum-strength defaults.
 
 ## Links

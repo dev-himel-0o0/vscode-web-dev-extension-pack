@@ -1,0 +1,55 @@
+# Publishes the extension to the VS Code Marketplace using Trusted Publishing.
+#
+# No PAT or repository secret is involved: the job requests a short-lived
+# GitHub OIDC token and exchanges it for a Marketplace credential that expires
+# after 15 minutes.
+#
+# One-time setup (Marketplace -> Manage publishers -> c0der-himel -> Trusted Publishing):
+#   Repository owner : dev-himel-0o0
+#   Repository       : vscode-web-dev-extension-pack
+#   Workflow         : publish.yml
+#   Environment      : (leave empty)
+#
+# To release: bump "version" in package.json, update CHANGELOG.md, commit and
+# push to main, then run this workflow from the Actions tab.
+
+name: Publish to Marketplace
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: marketplace-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish extension
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Show package to publish
+        run: |
+          node -e "
+            const p = require('./package.json');
+            console.log('Publisher :', p.publisher);
+            console.log('Extension :', p.name);
+            console.log('Version   :', p.version);
+            console.log('Packages  :', p.extensionPack ? p.extensionPack.length : 0);
+          "
+
+      - name: Publish with Trusted Publishing (OIDC)
+        run: npx --yes @vscode/vsce@4.1.1 publish --oidc

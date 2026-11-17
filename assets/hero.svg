@@ -225,6 +225,6 @@
 
   <!-- footer -->
   <line x1="96" y1="676" x2="1504" y2="676" stroke="#e6edf7" stroke-width="1"/>
-  <text x="96" y="704" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#94a3b8">c0der-himel.vscode-wev-dev-extension-pack</text>
+  <text x="96" y="704" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#94a3b8">Free · MIT licensed · No configuration required</text>
   <text x="1504" y="704" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" fill="#64748b" text-anchor="end">VS Code Marketplace</text>
 </svg>

@@ -1,5 +1,28 @@
 # Change Log
 
+## [2.7.0]
+
+Curation pass — the pack drops from 37 to 23 extensions to stay focused and lighter to install.
+
+Removed:
+
+- IntelliCode
+- IntelliCode Completions
+- Inline fold
+- JavaScript (ES6) code snippets
+- Git Graph
+- IntelliSense for CSS class names in HTML
+- HTML to CSS autocompletion
+- className Completion in CSS
+- css-auto-prefix
+- Color Info
+- Rainbow Tags
+- Highlight Matching Tag
+- TODO Highlight
+- vscode-styled-components
+
+The README was updated to match, and releases now publish from GitHub Actions using Trusted Publishing (OIDC) instead of a personal access token.
+
 ## [2.2.0]
 
 Some deprecated extensions removed & some useful extensions added

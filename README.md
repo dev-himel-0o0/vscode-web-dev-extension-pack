@@ -4,7 +4,7 @@
 
 ### A curated VS Code extension pack for modern web development
 
-One install. 37 extensions. Everything you need for HTML, CSS, JavaScript, React, Tailwind CSS, Git, and a faster workflow.
+One install. 23 extensions. Everything you need for HTML, CSS, JavaScript, React, Tailwind CSS, Git, and a faster workflow.
 
 [![Marketplace version](https://vsmarketplacebadges.dev/version/c0der-himel.vscode-wev-dev-extension-pack.svg)](https://marketplace.visualstudio.com/items?itemName=c0der-himel.vscode-wev-dev-extension-pack)
 [![Installs](https://vsmarketplacebadges.dev/installs-short/c0der-himel.vscode-wev-dev-extension-pack.svg)](https://marketplace.visualstudio.com/items?itemName=c0der-himel.vscode-wev-dev-extension-pack)
@@ -20,11 +20,11 @@ One install. 37 extensions. Everything you need for HTML, CSS, JavaScript, React
 
 ![Web Dev extension page in VS Code](assets/screenshot.png)
 
-<p align="center"><sub>The Web Dev extension page in VS Code — 37 curated extensions in one install.</sub></p>
+<p align="center"><sub>The Web Dev extension page in VS Code — 23 curated extensions in one install.</sub></p>
 
 ## Overview
 
-**Web Dev** is a curated [VS Code extension pack](https://code.visualstudio.com/api/references/extension-manifest#extension-packs) that turns a fresh editor into a complete front-end development environment in one install. It brings together 37 extensions for HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, styled-components, Git, linting, formatting, and everyday editor productivity.
+**Web Dev** is a curated [VS Code extension pack](https://code.visualstudio.com/api/references/extension-manifest#extension-packs) that turns a fresh editor into a complete front-end development environment in one install. It brings together 23 extensions for HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, Git, linting, formatting, and everyday editor productivity.
 
 Instead of searching the Marketplace for each tool, you install one extension. VS Code resolves the pack and installs every member for you. The pack ships **no runtime code, no npm packages, and no build step** — each included extension is maintained by its own publisher and updates independently.
 
@@ -32,29 +32,29 @@ It is built for front-end developers, React and Tailwind projects, students, tea
 
 ## Key Features
 
-- **One install, complete toolkit** — 37 curated extensions install from a single Marketplace entry.
-- **HTML & CSS superpowers** — auto-rename paired tags, highlight matching tags, class-name completion across HTML and CSS, auto-prefixing, and inline color previews.
-- **JavaScript & React workflow** — ES6/React snippets, ESLint feedback, Prettier formatting, template-string conversion, and styled-components support.
+- **One install, complete toolkit** — 23 curated extensions install from a single Marketplace entry.
+- **HTML & CSS superpowers** — auto-rename paired tags and instant color previews, with hex, RGB, HSL, and named colors highlighted as you type.
+- **JavaScript & React workflow** — React/Redux snippets, ESLint feedback, Prettier formatting, template-string conversion, and inline HTML highlighting inside template strings.
 - **Tailwind CSS IntelliSense** — autocomplete, syntax highlighting, linting, and hover previews for utility classes.
 - **Errors in context** — Error Lens and Error Gutters show diagnostics directly on the line where they occur.
-- **Cleaner code** — remove console logs, catch typos, trim trailing whitespace, and keep TODO comments visible.
-- **Git visibility** — GitLens and Git Graph bring blame, history, and branch visualization into the editor.
-- **Editor polish** — Material Icon Theme, GitHub Theme, Color Highlight, Rainbow Tags, and more.
+- **Cleaner code** — remove console logs, catch typos, trim trailing whitespace, and keep comment annotations readable with Better Comments.
+- **Git visibility** — GitLens brings blame, history, and repository insights into the editor.
+- **Editor polish** — Material Icon Theme, GitHub Theme, Color Highlight, and more.
 - **No overhead from the pack itself** — the pack adds no code or package dependencies; it only declares its members.
 - **Open and free** — MIT licensed and maintained in public on GitHub.
 
 ## What's Included
 
-The pack currently ships **37 extensions** across six areas. Every extension below is a member declared in the [`extensionPack`](https://github.com/dev-himel-0o0/vscode-web-dev-extension-pack/blob/main/package.json) array, and VS Code installs all of them when the pack is installed.
+The pack currently ships **23 extensions** across six areas. Every extension below is a member declared in the [`extensionPack`](https://github.com/dev-himel-0o0/vscode-web-dev-extension-pack/blob/main/package.json) array, and VS Code installs all of them when the pack is installed.
 
 | Area | Extensions |
 | --- | --- |
-| **HTML, CSS & Markup** | [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag), [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag), [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion), [HTML to CSS autocompletion](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion), [className Completion in CSS](https://marketplace.visualstudio.com/items?itemName=zitup.classnametocss), [css-auto-prefix](https://marketplace.visualstudio.com/items?itemName=sporiley.css-auto-prefix), [Color Info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info), [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight), [Rainbow Tags](https://marketplace.visualstudio.com/items?itemName=voldemortensen.rainbow-tags) |
-| **JavaScript, TypeScript & React** | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets), [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.javascriptsnippets), [Template String Converter](https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter), [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html), [Remove Console Log](https://marketplace.visualstudio.com/items?itemName=c0der-himel.remove-console-log), [Inline fold](https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold) |
-| **Styling** | [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss), [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components) |
-| **Code Quality & Formatting** | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens), [Error Gutters](https://marketplace.visualstudio.com/items?itemName=igorsbitnev.error-gutters), [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker), [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments), [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) |
-| **Git & Collaboration** | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) |
-| **Productivity & Editor** | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv), [EditorConfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig), [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview), [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=ibm.output-colorizer), [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=github.github-vscode-theme), [IntelliCode](https://marketplace.visualstudio.com/items?itemName=visualstudioexptteam.vscodeintellicode), [IntelliCode Completions](https://marketplace.visualstudio.com/items?itemName=visualstudioexptteam.vscodeintellicode-completions) |
+| **HTML, CSS & Markup** | [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag), [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) |
+| **JavaScript, TypeScript & React** | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets), [Template String Converter](https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter), [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html), [Remove Console Log](https://marketplace.visualstudio.com/items?itemName=c0der-himel.remove-console-log) |
+| **Styling** | [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) |
+| **Code Quality & Formatting** | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens), [Error Gutters](https://marketplace.visualstudio.com/items?itemName=igorsbitnev.error-gutters), [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker), [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) |
+| **Git & Collaboration** | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) |
+| **Productivity & Editor** | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv), [EditorConfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig), [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview), [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=ibm.output-colorizer), [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=github.github-vscode-theme) |
 
 > **Made by the same author:** [Remove Console Log](https://marketplace.visualstudio.com/items?itemName=c0der-himel.remove-console-log) is a companion extension built for this pack. It removes all console logs from the active file.
 
@@ -79,7 +79,7 @@ The pack currently ships **37 extensions** across six areas. Every extension bel
 
 ### Extension dependencies
 
-The pack's functional dependencies are the **37 extensions** listed in [What's Included](#whats-included). The authoritative list is the `extensionPack` array in [`package.json`](https://github.com/dev-himel-0o0/vscode-web-dev-extension-pack/blob/main/package.json).
+The pack's functional dependencies are the **23 extensions** listed in [What's Included](#whats-included). The authoritative list is the `extensionPack` array in [`package.json`](https://github.com/dev-himel-0o0/vscode-web-dev-extension-pack/blob/main/package.json).
 
 ### Development tooling
 
@@ -121,7 +121,7 @@ You can also open the folder manually with **File → Open Folder…** and selec
 - Press <kbd>F5</kbd>, or choose **Run → Start Debugging**.
 - A second VS Code window opens with the extension pack loaded.
 
-> The development host loads the pack itself. To test the complete 37-extension install exactly as Marketplace users experience it, follow step 5 and install the packaged VSIX.
+> The development host loads the pack itself. To test the complete 23-extension install exactly as Marketplace users experience it, follow step 5 and install the packaged VSIX.
 
 ### 4. Iterate on the pack
 
@@ -139,15 +139,17 @@ npx --yes @vscode/vsce package
 code --install-extension vscode-wev-dev-extension-pack-*.vsix
 ```
 
-Reload VS Code after installation. The pack and all 37 member extensions will be installed.
+Reload VS Code after installation. The pack and all 23 member extensions will be installed.
 
 ### 6. Publish a new version (optional)
 
-```bash
-npx --yes @vscode/vsce publish
-```
+Releases are published from GitHub Actions with [Trusted Publishing](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publish-with-github-actions-and-trusted-publishing), so no personal access token is stored anywhere.
 
-Make sure the `version` in `package.json` is higher than the latest release on the Marketplace. Publishing requires Marketplace publisher credentials — Microsoft Entra ID automated publishing (recommended) or a personal access token. See the official [publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) for setup instructions.
+1. Raise the `version` in `package.json` above the latest Marketplace release and add a [`CHANGELOG.md`](https://github.com/dev-himel-0o0/vscode-web-dev-extension-pack/blob/main/CHANGELOG.md) entry.
+2. Commit and push to `main`.
+3. In GitHub, open **Actions → Publish to Marketplace → Run workflow**.
+
+The workflow exchanges a short-lived OIDC token for a Marketplace credential and publishes the committed version. To publish manually instead, run `npx --yes @vscode/vsce publish` with a personal access token configured.
 
 ## Why These Technologies?
 
@@ -159,14 +161,14 @@ Make sure the `version` in `package.json` is higher than the latest release on t
 - **Better updates.** VS Code installs the latest compatible version of each member. The pack does not pin old releases or become a stale fork of tools that already exist.
 - **Lower build complexity.** No bundler, no compiled output, no release artifacts to debug — just a manifest, a changelog, and documentation.
 
-A custom extension that tried to reproduce all 37 tools would duplicate a huge amount of maintenance, lag behind upstream fixes, and take control away from users. An extension pack is the right level of abstraction.
+A custom extension that tried to reproduce all 23 tools would duplicate a huge amount of maintenance, lag behind upstream fixes, and take control away from users. An extension pack is the right level of abstraction.
 
 ### Why this particular set of extensions?
 
 - **Coverage of the whole workflow.** The set spans markup, styling, JavaScript/React, linting, formatting, Git, and editor productivity, so a new front-end project is usable immediately.
 - **Established, widely used tools.** The list favors mature extensions with active publishers and large user bases — Prettier, ESLint, GitLens, Live Server, Tailwind CSS IntelliSense, and Material Icon Theme, for example.
-- **Complementary rather than identical.** Some tools overlap by design (for example, CSS class completion works in different directions and contexts), and users can disable anything that does not fit their workflow.
-- **Practical quality-of-life additions.** Small tools such as Error Lens, TODO Highlight, and Remove Console Log remove daily friction without changing how a project is built.
+- **Complementary rather than identical.** Some tools overlap by design (for example, Error Lens and Error Gutters surface the same diagnostics in different ways), and users can disable anything that does not fit their workflow.
+- **Practical quality-of-life additions.** Small tools such as Error Lens, Trailing Spaces, and Remove Console Log remove daily friction without changing how a project is built.
 
 ### Why VS Code Marketplace and `vsce`?
 
@@ -176,7 +178,7 @@ The Marketplace is where VS Code users already discover and install extensions. 
 
 | Problem | How the pack helps |
 | --- | --- |
-| **Setup fatigue** | 37 extensions install from one Marketplace entry instead of 37 separate searches and installs. |
+| **Setup fatigue** | 23 extensions install from one Marketplace entry instead of 23 separate searches and installs. |
 | **Choice paralysis** | The list is curated and grouped, so users do not have to evaluate dozens of overlapping tools before writing code. |
 | **Inconsistent team setups** | Everyone can start from the same baseline toolchain, which reduces "works on my machine" editor differences. |
 | **Missing quality tooling** | Formatting, linting, spell checking, diagnostics, and Git history are available from the first file. |
@@ -187,7 +189,7 @@ The project does not ship settings or keybindings, so it stays unopinionated abo
 
 ## Challenges & Lessons Learned
 
-- **Curation vs. bloat.** Thirty-seven extensions is already a lot; every addition adds install time, startup work, and UI surface. Each candidate has to justify its place against overlap, maintenance status, and usefulness to a typical web project. This is why deprecated extensions were removed in v2.2.0 and replaced with maintained alternatives.
+- **Curation vs. bloat.** Twenty-three extensions is already a lot; every addition adds install time, startup work, and UI surface. Each candidate has to justify its place against overlap, maintenance status, and usefulness to a typical web project. This is why deprecated extensions were removed in v2.2.0 and a further fourteen were dropped in v2.7.0 after a curation review.
 - **Upstream churn.** The pack does not pin extension versions, so users receive the latest releases. An upstream deprecation, regression, or a raised minimum VS Code version can change the experience without any code change in this repository, so the list needs periodic audits.
 - **Compatibility across editor versions.** The manifest targets VS Code `^1.76.2` to stay available to older installs, but individual extensions set their own engine requirements. Testing the current VS Code release alongside the minimum supported version is part of a responsible release.
 - **A permanent Marketplace identity.** The published ID contains `wev` instead of `web`. Renaming it would break existing installs, bookmarks, and review links, so the original ID is kept for backward compatibility. The lesson: choose a Marketplace ID carefully, because it is effectively permanent.

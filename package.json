@@ -4,7 +4,7 @@
   "description": "VSCode Extension Pack for Web Development",
   "publisher": "c0der-himel",
   "icon": "icon.png",
-  "version": "2.6.1",
+  "version": "2.7.0",
   "engines": {
     "vscode": "^1.76.2"
   },
@@ -13,13 +13,9 @@
   ],
   "extensionPack": [
     "c0der-himel.remove-console-log",
-    "moalamri.inline-fold",
     "editorconfig.editorconfig",
     "eamodio.gitlens",
     "kisstkondoros.vscode-gutter-preview",
-    "visualstudioexptteam.vscodeintellicode",
-    "visualstudioexptteam.vscodeintellicode-completions",
-    "bierner.color-info",
     "mikestead.dotenv",
     "dsznajder.es7-react-js-snippets",
     "github.github-vscode-theme",
@@ -33,22 +29,12 @@
     "PKief.material-icon-theme",
     "ritwickdey.LiveServer",
     "shardulm94.trailing-spaces",
-    "solnurkarim.html-to-css-autocompletion",
-    "sporiley.css-auto-prefix",
     "streetsidesoftware.code-spell-checker",
     "Tobermory.es6-string-html",
-    "voldemortensen.rainbow-tags",
-    "wayou.vscode-todo-highlight",
-    "Zignd.html-css-class-completion",
-    "zitup.classnametocss",
-    "xabikos.javascriptsnippets",
     "bradlc.vscode-tailwindcss",
-    "vincaslt.highlight-matching-tag",
     "usernamehw.errorlens",
     "igorsbitnev.error-gutters",
-    "ibm.output-colorizer",
-    "mhutchie.git-graph",
-    "styled-components.vscode-styled-components"
+    "ibm.output-colorizer"
   ],
   "repository": {
     "type": "git",

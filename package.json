@@ -1,7 +1,7 @@
 {
   "name": "vscode-wev-dev-extension-pack",
   "displayName": "Web Dev",
-  "description": "VSCode Extension Pack for Web Development",
+  "description": "One install, 23 curated VS Code extensions for modern web development: HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, Git, linting, formatting, and editor productivity.",
   "publisher": "c0der-himel",
   "icon": "icon.png",
   "version": "2.7.0",
